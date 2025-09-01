@@ -22,10 +22,13 @@ img {
   );
   color: #fff;
   padding: 0 3.125%;
+<<<<<<< HEAD
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
+=======
+>>>>>>> fa7314d48d0ea96168e1b4c079a493038378e0b3
 }
 
 .header nav {
@@ -66,6 +69,7 @@ img {
   display: none;
 }
 
+<<<<<<< HEAD
 .hero {
   max-width: 1920px;
   aspect-ratio: 16/9;
@@ -85,6 +89,8 @@ img {
   display: none;
 }
 
+=======
+>>>>>>> fa7314d48d0ea96168e1b4c079a493038378e0b3
 .footer {
   padding: 82px 3.125%;
   background: #333;
@@ -115,6 +121,7 @@ img {
 }
 
 @media (max-width: 390px) {
+<<<<<<< HEAD
   .m-visual {
     display: block;
   }
@@ -132,6 +139,13 @@ img {
     gap: 38px;
   }
 
+=======
+  .footer {
+    flex-direction: column;
+    gap: 38px;
+  }
+
+>>>>>>> fa7314d48d0ea96168e1b4c079a493038378e0b3
   .footer p {
     text-align: center;
   }
