@@ -17,7 +17,7 @@ img {
   height: 100px;
   background: #000;
   color: #fff;
-  padding: 0 3.125%
+  padding: 0 3.125%;
 }
 
 .header nav {
@@ -49,23 +49,51 @@ img {
   background: transparent;
   border: none;
   cursor: pointer;
-
 }
 .util-menu > button img {
-    object-fit: contain;
+  object-fit: contain;
 }
 
 .btn-menu {
-    display: none;
+  display: none;
+}
+
+.footer {
+  padding: 82px 3.125%;
+  background: #333;
+  color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer p {
+  text-align: right;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 14px;
+}
+.footer p + p {
+  color: #fff;
+  margin-top: 26px;
 }
 
 @media (max-width: 1024px) {
-    .gnb, .util-menu > button:not(.btn-menu){
-        display: none;
-    }
-    .btn-menu {
-        display: block;
-    }
+  .gnb,
+  .util-menu > button:not(.btn-menu) {
+    display: none;
+  }
+  .btn-menu {
+    display: block;
+  }
+}
 
+@media (max-width: 390px) {
+  .footer {
+    flex-direction: column;
+    gap: 38px;
+  }
 
+  .footer p {
+    text-align: center;
+  }
 }
