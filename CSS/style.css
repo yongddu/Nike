@@ -96,10 +96,12 @@ img {
 }
 
 .sec-title {
-  /* width: 680px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  background: #5f5; */
+  /* background: #5f5; */
   text-align: center;
+  align-items: center;
 }
 
 .sec-title h2 {
