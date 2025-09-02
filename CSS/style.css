@@ -13,6 +13,12 @@ img {
   height: 100%;
   object-fit: cover;
 }
+
+.inner {
+  width: 1492px;
+  margin: 0 auto;
+}
+
 .header {
   height: 100px;
   background: linear-gradient(
@@ -22,13 +28,10 @@ img {
   );
   color: #fff;
   padding: 0 3.125%;
-<<<<<<< HEAD
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-=======
->>>>>>> fa7314d48d0ea96168e1b4c079a493038378e0b3
 }
 
 .header nav {
@@ -69,13 +72,12 @@ img {
   display: none;
 }
 
-<<<<<<< HEAD
 .hero {
   max-width: 1920px;
   aspect-ratio: 16/9;
 }
 
-.hero .video{
+.hero .video {
   width: 100%;
   height: 100%;
 }
@@ -89,8 +91,72 @@ img {
   display: none;
 }
 
-=======
->>>>>>> fa7314d48d0ea96168e1b4c079a493038378e0b3
+.best {
+  padding: 100px 0;
+}
+
+.sec-title {
+  /* width: 680px;
+  margin: 0 auto;
+  background: #5f5; */
+  text-align: center;
+}
+
+.sec-title h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+}
+.sec-title p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 32px;
+  color: #666;
+}
+
+.more {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+  background: #000;
+  border-radius: 50px;
+
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 32px;
+  transition: 0.4s;
+}
+.more:hover {
+  background: pink;
+  color: #fff;
+}
+
+.best-list {
+  margin-top: 97px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.best-list li {
+  /* width: 484px; */
+  /* height: 560px; */
+  aspect-ratio: 1/1.157;
+  background: pink;
+  flex: 1 1 auto;
+  flex: 1 1 30%;
+}
+
+.best-list li:last-child {
+  aspect-ratio: 1/0.4249;
+}
+
+.best-list li figure {
+  width: 100%;
+  height: 100%;
+}
+
 .footer {
   padding: 82px 3.125%;
   background: #333;
@@ -110,7 +176,19 @@ img {
   margin-top: 26px;
 }
 
+
+/* .inner 크기에 따른 분기점이 반드시 필요 */
+@media (max-width: 1492px) {
+.inner {
+  width: 96%;
+}
+}
 @media (max-width: 1024px) {
+  .inner {
+    width: 984px;
+    width: 96.0938%;
+  }
+
   .gnb,
   .util-menu > button:not(.btn-menu) {
     display: none;
@@ -121,7 +199,10 @@ img {
 }
 
 @media (max-width: 390px) {
-<<<<<<< HEAD
+  .inner {
+    width: 94.8718%;
+  }
+
   .m-visual {
     display: block;
   }
@@ -133,19 +214,19 @@ img {
   .hero .video video {
     display: none;
   }
-  
+  .best-list li {
+    flex-basis: 100%; /* fxb100p */
+    gap: 10px;
+  }
+
+  .best-list li:last-child {
+    aspect-ratio: 1/1.157;
+  }
   .footer {
     flex-direction: column;
     gap: 38px;
   }
 
-=======
-  .footer {
-    flex-direction: column;
-    gap: 38px;
-  }
-
->>>>>>> fa7314d48d0ea96168e1b4c079a493038378e0b3
   .footer p {
     text-align: center;
   }
