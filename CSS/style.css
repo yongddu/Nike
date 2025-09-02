@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root {
+  --gap: clamp(10px, 1.0417vw, 20px);
+  --sec-pd: 5.2083vw 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -92,7 +97,7 @@ img {
 }
 
 .best {
-  padding: 100px 0;
+  padding: var(--sec-pd);
 }
 
 .sec-title {
@@ -105,6 +110,7 @@ img {
 .sec-title h2 {
   font-weight: 700;
   font-size: 40px;
+  font-size: clamp(30px, 2.5vw, 40px);
   color: #000;
 }
 .sec-title p {
@@ -135,7 +141,7 @@ img {
 .best-list {
   margin-top: 97px;
   display: flex;
-  gap: 20px;
+  gap: var(--gap);
   flex-wrap: wrap;
 }
 
@@ -153,6 +159,52 @@ img {
 }
 
 .best-list li figure {
+  width: 100%;
+  height: 100%;
+}
+
+.trending {
+  padding: var(--sec-pd);
+}
+
+.list-title {
+  margin-top: 157px;
+  margin-top: 8.1771vw;
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+}
+
+.trending-list {
+  margin: 2.6vw 0;
+  display: flex;
+  /* gap: 5.208333333333333vw; */
+  /* clamp(최소값, 추천값, 최대값) */
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+
+.trending-list li {
+  flex: 1 1 45%;
+  flex: 1 1 min(484px, 50vw);
+}
+
+.apparel {
+  padding: var(--sec-pd);
+}
+
+.apparel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.apparel-list li {
+  /* flex: 1 1 auto; */
+  flex: 1 1 clamp(290px, 358px, 482px);
+  aspect-ratio: 1/0.9078;
+}
+
+.apparel-list li figure {
   width: 100%;
   height: 100%;
 }
@@ -176,12 +228,11 @@ img {
   margin-top: 26px;
 }
 
-
 /* .inner 크기에 따른 분기점이 반드시 필요 */
 @media (max-width: 1492px) {
-.inner {
-  width: 96%;
-}
+  .inner {
+    width: 96%;
+  }
 }
 @media (max-width: 1024px) {
   .inner {
